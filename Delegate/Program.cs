@@ -23,6 +23,10 @@ namespace Delegate
             Fighter fighter = new Fighter();
             KomboHit hit = new KomboHit(fighter.Kick);
             hit += fighter.Punch;
+            hit();
+            hit -= fighter.Kick;
+            hit();
+            Console.ReadLine();
 
         }
     }
